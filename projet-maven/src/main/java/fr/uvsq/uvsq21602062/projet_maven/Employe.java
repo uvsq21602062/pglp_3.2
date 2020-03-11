@@ -29,4 +29,8 @@ public class Employe {
 	public void setAnciennete(int anciennete) {
 		this.anciennete = anciennete;
 	}
+	
+	public float getSalaireTotal() {
+		return this.salaire + this.anciennete*20;
+	}
 }

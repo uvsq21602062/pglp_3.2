@@ -31,4 +31,10 @@ public class EmployeTest {
 		E.setAnciennete(5);
 		assertTrue(E.getAnciennete() == 5);	
 	}
+	
+	@Test
+	public void testGetSalaireTotal() {
+		Employe e = new Employe(1000, 5);
+		assertTrue(e.getSalaireTotal() == 1000 + 5*20);	
+	}
 }

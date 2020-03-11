@@ -44,5 +44,11 @@ public class VendeurTest {
 		D.setCommission(100);
 		assertTrue(D.getCommission() == 100);	
 	}
+	
+	@Test
+	public void testGetSalaireTotal() {
+		Vendeur v = new Vendeur(1000, 5, 100);
+		assertTrue(v.getSalaireTotal() == 1000 + 5*20 + 100);	
+	}
 
 }

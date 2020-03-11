@@ -25,4 +25,8 @@ public class Vendeur extends Employe {
 	public void setCommission(float commission) {
 		this.commission = commission;
 	}
+	
+	public float getSalaireTotal() {
+		return this.salaire + this.anciennete*20 + this.commission;
+	}
 }
