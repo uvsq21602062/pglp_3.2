@@ -16,7 +16,19 @@ public class EmployeTest {
 	public void testSetSalaire() {
 		Employe E = new Employe(1000);
 		E.setSalaire(500);
-		assertTrue(E.getSalaire() == 500);
-		
+		assertTrue(E.getSalaire() == 500);	
+	}
+	
+	@Test
+	public void testGetAnciennete() {
+		Employe E = new Employe(1000, 5);
+		assertTrue(E.getAnciennete() == 5);	
+	}
+	
+	@Test
+	public void testSetAnciennete() {
+		Employe E = new Employe(1000);
+		E.setAnciennete(5);
+		assertTrue(E.getAnciennete() == 5);	
 	}
 }
