@@ -14,6 +14,7 @@ public class Employe {
 		this.anciennete = anciennete;
 	}
 	
+	
 	public float getSalaire() {
 		return this.salaire;
 	}
